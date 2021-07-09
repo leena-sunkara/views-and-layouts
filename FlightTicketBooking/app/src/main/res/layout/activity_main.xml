@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violet"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivBackArrow"
+        style="@style/title_style"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ic_back_arrow"
+        android:contentDescription="@string/none" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/title_style"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/ivBackArrow"
+        android:layout_toRightOf="@+id/ivBackArrow"
+        android:text="@string/fly_to_seoul"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etName"
+        style="@style/et_style"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_person"
+        android:drawableLeft="@drawable/ic_person"
+        android:hint="@string/economy" />
+
+    <EditText
+        android:id="@+id/etLocation"
+        style="@style/et_style"
+        android:layout_below="@+id/etName"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_location"
+        android:drawableLeft="@drawable/ic_location"
+        android:hint="@string/seoul" />
+
+    <EditText
+        android:id="@+id/etDestination"
+        style="@style/et_style"
+        android:layout_below="@id/etLocation"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_aeroplane"
+        android:drawableLeft="@drawable/ic_aeroplane"
+        android:hint="@string/choose_destination" />
+
+    <EditText
+        android:id="@+id/etSelectDate"
+        style="@style/et_style"
+        android:layout_below="@+id/etDestination"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_date"
+        android:drawableLeft="@drawable/ic_date"
+        android:hint="@string/select_dates"
+        android:inputType="date" />
+
+    <View
+        android:id="@+id/whiteView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSelectDate"
+        android:layout_marginTop="50dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tvExplore"
+        style="@style/view_style"
+        android:layout_alignTop="@+id/whiteView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:text="@string/explore_flights"
+        android:textColor="@color/grey" />
+
+    <ImageView
+        android:id="@+id/ivImage01"
+        style="@style/view_style"
+        android:layout_below="@+id/tvExplore"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image_01" />
+
+    <TextView
+        android:id="@+id/nepal"
+        style="@style/view_style"
+        android:layout_below="@+id/tvExplore"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/ivImage01"
+        android:layout_toRightOf="@+id/ivImage01"
+        android:text="@string/nepal"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/nepalTime"
+        style="@style/view_style"
+        android:layout_below="@+id/nepal"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@id/ivImage01"
+        android:layout_toRightOf="@+id/ivImage01"
+        android:text="@string/nepal_time"
+        android:textColor="@color/grey" />
+
+    <ImageView
+        android:id="@+id/ivImage02"
+        style="@style/view_style"
+        android:layout_below="@+id/ivImage01"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image_02" />
+
+    <TextView
+        android:id="@+id/asia"
+        style="@style/view_style"
+        android:layout_below="@+id/nepalTime"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="65dp"
+        android:layout_toEndOf="@id/ivImage02"
+        android:layout_toRightOf="@+id/ivImage02"
+        android:text="@string/asia"
+        android:textColor="@color/black" />
+
+    <TextView
+        style="@style/view_style"
+        android:layout_below="@+id/asia"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@id/ivImage02"
+        android:layout_toRightOf="@+id/ivImage02"
+        android:text="@string/asia_time"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>
